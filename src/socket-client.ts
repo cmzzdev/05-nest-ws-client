@@ -47,7 +47,6 @@ const addListeners = () => {
         if(messageInput.value.trim().length <= 0) return;
         
         socket.emit('message-from-client', {
-            id: 'YO!', 
             message: messageInput?.value
         })
 
