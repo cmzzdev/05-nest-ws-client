@@ -4,6 +4,7 @@ let socket: Socket;
 
 export const connectToServer = (token: string) => {
     // http://localhost:3000/socket.io/socket.io.js
+    // TODO: Env var to set the base URL:
     const manager: Manager = new Manager('http://localhost:3000/socket.io/socket.io.js', {
         extraHeaders: {
             hola: 'mundo',
